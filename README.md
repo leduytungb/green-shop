@@ -1,4 +1,4 @@
-# TiDA Systems Frontend
+# Green Shop Systems Frontend
 
 {A brief description of your project...}
 

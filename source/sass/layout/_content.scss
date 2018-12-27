@@ -1,0 +1,43 @@
+// ======================================================
+// Layout :: Content
+// ======================================================
+.block-header {
+  position: relative;
+  margin-bottom: 37px;
+  display: flex;
+  justify-content: space-between;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 1px;
+    bottom: 1px;
+    background: $border-color;
+  }
+  &__title {
+    display: inline-block;
+    color: $brand-color;
+    padding-bottom: 14px;
+    border-bottom: 2px solid $brand-color;
+    position: relative;
+    z-index: 9;
+  }
+  &-navigation__prev,
+  &-navigation__next {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    line-height: 21px;
+    text-align: center;
+    border-radius: 50%;
+    color: #838383;
+    font-size: 10px;
+    border: 1px solid #c6c6c6;
+    &:hover {
+      border-color: transparent;
+      background: $brand-color;
+      color: #fff;
+    }
+  }
+}

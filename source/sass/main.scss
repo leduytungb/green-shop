@@ -1,0 +1,47 @@
+// We architecting this project follow as the "7-1 Pattern" (7 folders, 1 file)
+// For more detail about this pattern
+// (https://sass-guidelin.es/#the-7-1-pattern)
+
+// 1. Abstracts
+// ------------
+@import 'abstracts/font-face';
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/functions';
+
+// 2. Base
+// -------
+@import 'bootstrap/scss/bootstrap-grid';
+@import 'bootstrap/scss/bootstrap-reboot';
+@import 'bootstrap/scss/bootstrap';
+@import 'owl.carousel/src/scss/owl.carousel';
+@import 'owl.carousel/src/scss/owl.theme.default';
+@import 'base/typography';
+@import 'base/colors';
+@import 'base/images';
+
+// 3. Global
+// ----------
+@import 'base/global';
+
+// 4. Layout
+// ---------
+@import 'layout/content';
+@import 'layout/header';
+@import 'layout/footer';
+
+// 5. Components
+// -------------
+@import 'components/table';
+
+// 6. Pages
+// --------
+@import 'pages/home';
+
+// 7. Responsive
+// --------
+@import 'pages/responsive';
+
+// 8. Themes
+// ---------
+// We just have only 1 theme in this project

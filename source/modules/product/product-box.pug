@@ -1,0 +1,29 @@
+include ../button/buy-now
+include product-label
+
+mixin product-box(imageName, title, currentPrice, oldPrice, label, modifier)
+  .product-box(class=modifier)
+    .product-box-thumb
+      img(src="images/" + imageName + ".jpg")
+      - var label
+      case label
+        when 0
+          +product-label-new
+        when 1
+          +product-label-promotion
+      .product-box-thumb-action
+        +buy-now
+        a(href="#" class="search-btn")
+          i.fas.fa-search
+    .product-box-body
+      h6.product-box__title
+        a= title
+      .product-box-rate
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star-half-alt
+      .product-box-price
+        span.product-box-price--current= currentPrice + "đ"
+        del.product-box-price--old= oldPrice + "đ"

@@ -1,0 +1,16 @@
+mixin product-small(imageName, title, currentPrice)
+  .product-small
+    a(href="#" class="image-holder")
+      img(src="images/" + imageName + ".jpg")
+    .product-body
+      h6.product__title 
+        a= title
+      .product__rate
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star-half-alt
+      .product__price= price
+        span.product__price--current= currentPrice + "đ"
+        

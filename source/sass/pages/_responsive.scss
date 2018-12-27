@@ -1,0 +1,68 @@
+// ======================================================
+// Pages :: Responsive
+// ======================================================
+@media (max-width: 1200px) {
+  .block-two-left {
+    margin-bottom: 30px;
+  }
+  .product-small {
+    margin-bottom: 30px;
+  }
+  .header-middle-action-form {
+    width: 306px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header-bottom-navbar__brand {
+    display: none;
+  }
+  .header-bottom-navbar {
+    justify-content: flex-end;
+  }
+  .header-middle {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-top-left {
+    display: block;
+    margin-top: 10px;
+  }
+  .header-top-left-social__link {
+    border: none;
+  }
+  .header-top-left-social__item:last-child .header-top-left-social__link {
+    border: none;
+  }
+  .post {
+    margin-bottom: 30px;
+  }
+  .footer-top-col__logo {
+    margin-bottom: 30px;
+  }
+  .footer-middle-list {
+    display: block;
+  }
+  .footer-middle-list__item {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .block-three-text {
+    margin-top: 10px;
+    span {
+      display: inline-block;
+    }
+  }
+  .block-three-form {
+    margin-top: 20px;
+  }
+  .product-box-thumb img {
+    width: 100%;
+  }
+  .header-middle-support {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}

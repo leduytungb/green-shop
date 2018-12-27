@@ -1,0 +1,78 @@
+// ======================================================
+// Layout :: Footer
+// ======================================================
+// Footer
+.footer-top {
+  background: $light-black-color;
+  border-top: 1px solid #494949;
+  border-bottom: 1px solid #494949;
+  padding: 40px 0;
+  &-col {
+    color: #b7b7b7;
+    &:not(:first-child) {
+      margin-top: 40px;
+    }
+    &__logo {
+      margin-bottom: 15px;
+      display: block;
+    }
+    &__text {
+      margin-bottom: 20px;
+    }
+    &-list {
+      &__item {
+        margin-bottom: 22px;
+      }
+      &__link {
+        color: #b7b7b7;
+      }
+      &__link:hover {
+        color: $brand-color;
+      }
+    }
+    &__title {
+      text-transform: uppercase;
+      color: $brand-color;
+      margin-bottom: 30px;
+    }
+    &-contact-item {
+      margin-bottom: 10px;
+      &__icon {
+        color: $brand-color;
+        font-size: 18px;
+        width: 11px;
+        margin-right: 7px;
+      }
+    }
+  }
+}
+
+// Footer middle
+.footer-middle {
+  background: $light-black-color;
+  padding: 25px 0;
+  &-list {
+    display: flex;
+    &__item {
+      margin-right: 20px;
+    }
+    &__link {
+      color: #b7b7b7;
+    }
+  }
+  &-credit {
+    display: flex;
+    font-size: 19px;
+    &__item {
+      margin-left: 14px;
+    }
+  }
+}
+
+// Footer bottom
+.footer-bottom {
+  background: #434343;
+  font-size: 14px;
+  color: #fff;
+  padding: 10px 0 14px;
+}

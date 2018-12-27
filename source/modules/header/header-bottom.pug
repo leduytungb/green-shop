@@ -1,0 +1,38 @@
+mixin header-bottom
+  .header-bottom
+    .container
+      nav.navbar.navbar-expand-lg.header-bottom-navbar
+        a.navbar-brand(href='#' class='header-bottom-navbar__brand') 
+          i.fas.fa-bars
+        button.navbar-toggler.header-bottom-navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon.header-bottom-navbar-toggler__icon
+            i.fas.fa-bars
+        #navbarSupportedContent.collapse.navbar-collapse
+          ul.navbar-nav
+            li.nav-item.header-bottom-navbar__item.active
+              a(href='#' class='header-bottom-navbar__link')
+                | Trang chủ
+            li.nav-item.header-bottom-navbar__item
+              a(href='#' class='header-bottom-navbar__link') Giới thiệu
+            li.nav-item.header-bottom-navbar__item.dropdown
+              a#navbarDropdown.header-bottom-navbar__link(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                | Sản phẩm
+                i.fas.fa-caret-down
+              .dropdown-menu(aria-labelledby='navbarDropdown')
+                a.dropdown-item(href='#') Sản phẩm 1
+                a.dropdown-item(href='#') Sản phẩm 2
+                a.dropdown-item(href='#') Sản phẩm 3
+            li.nav-item.header-bottom-navbar__item.dropdown
+              a#navbarDropdown.header-bottom-navbar__link(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                | Sản phẩm mới
+                i.fas.fa-caret-down
+              .dropdown-menu(aria-labelledby='navbarDropdown')
+                a.dropdown-item(href='#') Sản phẩm  mới 1
+                a.dropdown-item(href='#') Sản phẩm mới 2
+                a.dropdown-item(href='#') Sản phẩm mới 3
+            li.nav-item.header-bottom-navbar__item
+              a(href='#' class='header-bottom-navbar__link') Tin tức
+            li.nav-item.header-bottom-navbar__item
+              a(href='#' class='header-bottom-navbar__link') Liên hệ
+
+        

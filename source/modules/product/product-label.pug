@@ -1,0 +1,4 @@
+mixin product-label-new(title='new')
+  span(href="#" class="product__label--new")= title
+mixin product-label-promotion(number=50)
+  span(href="#" class="product__label--promotion")= "-" + number + "%"

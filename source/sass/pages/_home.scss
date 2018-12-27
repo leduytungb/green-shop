@@ -1,0 +1,77 @@
+// ======================================================
+// Pages :: Home
+// ======================================================
+.block-three {
+  background: $light-black-color;
+  padding: 33px 0;
+  &-info {
+    p {
+      font-size: 14px;
+      margin-bottom: 5px;
+      font-weight: $bold-font-weight;
+      text-transform: uppercase;
+    }
+    ul {
+      display: flex;
+      font-size: 16px;
+      li {
+        margin-right: 25px;
+      }
+      a {
+        color: $text-color;
+      }
+    }
+  }
+  &-text {
+    span {
+      display: block;
+      font-size: 14px;
+      font-weight: $bold-font-weight;
+      text-transform: uppercase;
+    }
+  }
+  &-form {
+    .form-control {
+      border-radius: 0;
+    }
+    .input-group-text {
+      color: #fff;
+      background: $brand-color;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 14px;
+  height: 14px;
+  margin: 0 4px;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: $brand-color;
+}
+.slider {
+  position: relative;
+  margin-bottom: 50px;
+  .owl-dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+  }
+}
+
+.featured,
+.new {
+  margin-bottom: 25px;
+}
+
+.banner {
+  margin-bottom: 60px;
+}
+
+.blog {
+  margin-bottom: 68px;
+}

@@ -1,0 +1,10 @@
+mixin block-header(title, hasNavigation)
+  .block-header
+    h5.block-header__title= title
+    if hasNavigation
+      .block-header-navigation
+        a(href="#").block-header-navigation__prev.js-prev-slider
+          i.fas.fa-angle-left
+        a(href="#").block-header-navigation__next.js-next-slider
+          i.fas.fa-angle-right
+    

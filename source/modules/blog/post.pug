@@ -1,0 +1,10 @@
+mixin post(imageName, date, title, content)
+  .post
+    a(href="#" class="post-thumb")
+      img(src="images/" + imageName + ".jpg")
+    .post-body
+      .post__date= date
+      h6.post__title
+        a= title
+      p.post__content= content
+      a(href="#" class="see-more-btn") Đọc tiếp

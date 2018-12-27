@@ -1,0 +1,10 @@
+node_modules/
+tmp/
+
+.framgia-ci-reports/**
+!.framgia-ci-reports/.keep
+.framgia-ci-result.temp.yml
+
+package-lock.json
+
+.DS_Store

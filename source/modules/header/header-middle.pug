@@ -1,0 +1,24 @@
+mixin header-middle
+  .header-middle
+    .container
+      .row.align-items-center.justify-content-between
+        .col-md-6
+          a(href="#" class='header-middle__logo')
+            img(src='images/logo-header.jpg')
+        .col-md-6
+          p.header-middle-support
+            span.header-middle-support__icon
+              i.fas.fa-phone
+            span.header-middle-support__text 
+              span.text-uppercase Hỗ trợ
+                | : (04) 6674 2332 - (04) 3786 8904
+          .header-middle-action
+            form.header-middle-action-form
+              input(type='text', class='header-middle-action-form__input' placeholder='Tìm kiếm...')
+              button.header-middle-action-form__btn
+                span.header-middle-action-form__icon
+                  i.fas.fa-search
+            .header-middle-action-cart
+              span.header-middle-action-cart__icon
+                i.fas.fa-shopping-basket
+              span.header-middle-action-cart__text 0 sản phẩm

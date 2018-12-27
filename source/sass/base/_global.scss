@@ -1,0 +1,23 @@
+// ======================================================
+// Components :: Tables
+// ======================================================
+body {
+  color: $text-color;
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+  font-weight: $normal-font-weight;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin-bottom: 0;
+}
+button:focus {
+  outline: none;
+}
+a:hover {
+  text-decoration: unset;
+}

@@ -1,0 +1,33 @@
+mixin header-top
+  .header-top
+    .container
+      .row.justify-content-between
+        .col-lg-6
+          .header-top-left
+            .header-top-left-time
+              span.header-top-left-time__icon 
+                i.far.fa-clock
+              span.header-top-left-time__hour Open time: 8:00 - 18:00
+              span Monday - Sunday            
+            ul.header-top-left-social
+              li.header-top-left-social__item
+                a(href='#' class='header-top-left-social__link')
+                  i.fab.fa-facebook-f
+              li.header-top-left-social__item
+                a(href='#' class='header-top-left-social__link')
+                  i.fab.fa-twitter
+              li.header-top-left-social__item
+                a(href='#' class='header-top-left-social__link')
+                  i.fab.fa-tumblr
+              li.header-top-left-social__item
+                a(href='#' class='header-top-left-social__link')
+                  i.fab.fa-vimeo-v
+        .col-md-auto
+          .header-top-right
+            a(href="#").header-top-right__sign-in
+              i.fas.fa-user
+              |  Đăng nhập
+            a(href="#").header-top-right__sign-up
+              i.fas.fa-user-plus
+              |  Đăng ký
+      

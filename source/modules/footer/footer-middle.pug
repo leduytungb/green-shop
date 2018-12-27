@@ -1,0 +1,20 @@
+mixin footer-middle
+  .footer-middle
+    .container
+      .row.justify-content-between.align-items-center
+        .col-md-auto
+          ul.footer-middle-list
+            each item in ['Sitemap', 'Danh mục sản phẩm', 'Hợp tác', 'Thông tin liên hệ', 'Câu hổi thường gặp']
+              li.footer-middle-list__item
+                a(href="#" class="footer-middle-list__link")= item
+        .col-md-auto
+          ul.footer-middle-credit
+            li.footer-middle-credit__item
+              i.fab.fa-cc-visa
+            li.footer-middle-credit__item
+              i.fab.fa-cc-mastercard
+            li.footer-middle-credit__item
+              i.fab.fa-cc-paypal
+            li.footer-middle-credit__item
+              i.fab.fa-cc-paypal
+              

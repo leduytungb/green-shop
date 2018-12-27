@@ -1,0 +1,225 @@
+include modules/header/header-top
+include modules/header/header-middle
+include modules/header/header-bottom
+include modules/slider/slider-item
+include modules/footer/footer-top
+include modules/footer/footer-middle
+include modules/footer/footer-bottom
+include modules/head/head
+include modules/block/block-header
+include modules/product/product-label
+include modules/product/product-box
+include modules/product/product-small
+include modules/banner
+include modules/blog/post
+
+doctype html
+html
+  +head
+  body
+    // Start header
+    header
+      +header-top
+      +header-middle
+      +header-bottom
+    // End header
+    |
+    |
+    main
+      // Start slider
+      .slider
+        .owl-carousel.owl-theme.js-slider
+          +slider-item("slider-1")
+          +slider-item("slider-1")
+          +slider-item("slider-1")
+      // End slider
+      |
+      |
+      // Start featured
+      .featured
+        .container
+          +block-header('Sản phẩm nổi bật')
+          .row
+            .col-md-6
+              +product-box("cay-chan-chim", "Cây chân chim", "250.000", "250.000", 0)
+              .row
+                .col-md-6
+                  +product-box("cay-co-ta", "Cây Cọ Ta", "150.000", "250.000", '', 'is-small')
+                .col-md-6
+                  +product-box("cay-dua-nho", "Cây Dứa Nhỏ", "375.000", "250.000", '', 'is-small')
+            .col-md-6
+              .row
+                .col-md-6
+                  +product-box("cay-da-lam", "Cây Dạ Lam", "500.000", "250.000", 1, 'is-small')
+                .col-md-6
+                  +product-box("cay-danh-du", "Cây Danh Dự", "850.000", "250.000", 0, 'is-small')
+                .col-md-12
+                  +product-box("cay-da-bup-do", "Cây đa búp đỏ", "1.000.000", "250.000", 1)
+      // End featured
+      |
+      |
+      // Start Block two
+      .block-two
+        .container
+          .row
+            .col-xl-3
+              .block-two-left
+                +block-header('Sản phẩm mua nhiều')
+                .row
+                  .col-md-6.col-xl-12
+                    +product-small("cay-chan-chim-small", "Cây chân chim", "250.000")
+                  .col-md-6.col-xl-12
+                    +product-small("cay-da-lam-small", "Cây Dạ Lam", "150.000")
+                  .col-md-6.col-xl-12
+                    +product-small("cay-danh-du-small", "Cây danh dự", "450.000")
+                  .col-md-6.col-xl-12
+                    +product-small("cay-da-bup-do-small", "Cây đa búp đỏ", "250.000")
+                  .col-md-6.col-xl-12
+                    +product-small("cay-co-ta-small", "Cây cọ ta", "300.000")
+                  .col-md-6.col-xl-12
+                    +product-small("cay-dua-nho-small", "Cây dứa nhỏ", "275.000")
+            .col-xl-9
+              .block-two-right
+                +block-header('Sản phẩm khuyến mại', true)
+                .promotion-slider.js-owl-slider
+                  .owl-carousel.owl-theme.js-promotion-slider
+                    .item
+                      .row
+                        .col-md-4
+                          +product-box("cay-danh-du", "Cây Danh Dự", "475.000", "250.000", 1, 'is-small')
+                        .col-md-4
+                          +product-box("cay-dua-nho", "Cây Dứa Nhỏ", "668.000", "250.000", 1, 'is-small')
+                        .col-md-4
+                          +product-box("cay-co-ta", "Cây Cọ Ta", "770.000", "250.000", '', 'is-small')
+                        .col-md-4
+                          +product-box("cay-da-lam", "Cây Dạ Lam", "555.000", "250.000", '', 'is-small')
+                        .col-md-4
+                          +product-box("cay-danh-du", "Cây Danh Dự", "780.000", "250.000", '', 'is-small')
+                        .col-md-4
+                          +product-box("cay-dua-nho", "Cây Dứa Nhỏ", "375.000", "250.000", '', 'is-small')
+                    .item
+                      .row
+                        .col-md-4
+                          +product-box("cay-danh-du", "Cây Danh Dự", "475.000", "250.000", '', 'is-small')
+                        .col-md-4
+                          +product-box("cay-dua-nho", "Cây Dứa Nhỏ", "668.000", "250.000", '', 'is-small')
+                        .col-md-4
+                          +product-box("cay-co-ta", "Cây Cọ Ta", "770.000", "250.000", '', 'is-small')
+                        .col-md-4
+                          +product-box("cay-da-lam", "Cây Dạ Lam", "555.000", "250.000", '', 'is-small')
+                        .col-md-4
+                          +product-box("cay-danh-du", "Cây Danh Dự", "780.000", "250.000", '', 'is-small')
+                        .col-md-4
+                          +product-box("cay-dua-nho", "Cây Dứa Nhỏ", "375.000", "250.000", '', 'is-small')
+      // End Block two
+      |
+      |
+      // Start banner
+      .banner
+        .container
+          +banner('banner')
+      // End banner
+      |
+      |
+      // New 
+      .new
+        .container
+          +block-header('Sản phẩm mới', true)
+          .new-slider.js-owl-slider
+            .owl-carousel.owl-theme
+              .item
+                .row
+                  .col-md-4.col-lg-3
+                    +product-box("cay-danh-du", "Cây Danh Dự", "250.000", "250.000", 0, 'is-small')
+                  .col-md-4.col-lg-3
+                    +product-box("cay-xuong-rong", "Cây Xương Rồng", "250.000", "250.000", '', 'is-small')
+                  .col-md-4.col-lg-3
+                    +product-box("cay-da-lam", "Cây Dạ Lam", "250.000", "250.000", '', 'is-small')
+                  .col-md-4.col-lg-3
+                    +product-box("cay-dua-nho", "Cây Dứa Nhỏ", "250.000", "250.000", '', 'is-small')
+                  .col-md-4.col-lg-3
+                    +product-box("cay-danh-du", "Cây Danh Dự", "680.000", "250.000", '', 'is-small')
+                  .col-md-4.col-lg-3
+                    +product-box("cay-da-lam", "Cây Dạ Lam", "880.000", "250.000", '', 'is-small')
+                  .col-md-4.col-lg-3
+                    +product-box("cay-chan-chim", "Cây Chân Chim", "750.000", "250.000", '', 'is-small')
+                  .col-md-4.col-lg-3
+                    +product-box("cay-da-bup-do", "Cây đa búp đỏ", "150.000", "250.000", '', 'is-small')
+              .item
+                .row
+                  .col-md-4.col-lg-3
+                    +product-box("cay-danh-du", "Cây Danh Dự", "250.000", "250.000", '', 'is-small')
+                  .col-md-4.col-lg-3
+                    +product-box("cay-xuong-rong", "Cây Xương Rồng", "250.000", "250.000", '', 'is-small')
+                  .col-md-4.col-lg-3
+                    +product-box("cay-da-lam", "Cây Dạ Lam", "250.000", "250.000", '', 'is-small')
+                  .col-md-4.col-lg-3
+                    +product-box("cay-dua-nho", "Cây Dứa Nhỏ", "250.000", "250.000", '', 'is-small')
+                  .col-md-4.col-lg-3
+                    +product-box("cay-danh-du", "Cây Danh Dự", "680.000", "250.000", '', 'is-small')
+                  .col-md-4.col-lg-3
+                    +product-box("cay-da-lam", "Cây Dạ Lam", "880.000", "250.000", '', 'is-small')
+                  .col-md-4.col-lg-3
+                    +product-box("cay-chan-chim", "Cây Chân Chim", "750.000", "250.000", '', 'is-small')
+                  .col-md-4.col-lg-3
+                    +product-box("cay-da-bup-do", "Cây đa búp đỏ", "150.000", "250.000", '', 'is-small')
+      // End New
+      |
+      |
+      // Start blog
+      .blog
+        .container
+          +block-header('Tin tức')
+          .row
+            .col-md-4
+              +post('post-thumb-1','Thứ 7 ,ngày 31, tháng 12, năm 2015','15 thiết kế phòng ngủ tuyệt đẹp làm vạn người mê','Cùng Sài Gòn Hoa tìm hiểu một vài xu hướng thiết kế sân vườn được ưa chuộng hiện nay nhé ! Kết hợp hàng rào')
+            .col-md-4
+              +post('post-thumb-2','Thứ 7 ,ngày 31, tháng 12, năm 2015','Tạo Tiểu Cảnh Góc Sân Cho Nhà Phố, Biệt Thự Đẹp','Khi bước từ ngoài ngõ vào hay từ trong nhà đi ra, góc sân luôn là điểm nhìn đầu tiên của chúng ta.')
+            .col-md-4
+              +post('post-thumb-3','Thứ 7 ,ngày 31, tháng 12, năm 2015','Cách bố trí hoa chậu trước cửa ấn tượng','Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, phần không gian trước cửa')
+      // End blog
+      |
+      |
+      // Block three
+      .block-three
+        .container
+          .row.align-items-center
+            .col-md-4
+              .block-three-info
+                p Kênh thông tin từ chúng tôi:
+                ul
+                  li
+                    a(href='#')
+                      i.fab.fa-facebook-f
+                  li
+                    a(href='#')
+                      i.fab.fa-twitter
+                  li  
+                    a(href='#')
+                      i.fab.fa-tumblr
+                  li
+                    a(href='#')
+                      i.fab.fa-vimeo-v
+            .col-md-3
+              p.block-three-text
+                span Đăng ký nhận 
+                span email từ chúng tôi
+            .col-md-5
+              form(action="/" class="block-three-form")
+                .input-group
+                  input#validationTooltipUsername.form-control(type='text', aria-describedby='validationTooltipUsernamePrepend', required='')
+                  .input-group-prepend
+                    span#validationTooltipUsernamePrepend.input-group-text
+                      i.fas.fa-paper-plane
+      // End block three
+      |
+      |
+    // Start footer
+    footer
+      +footer-top
+      +footer-middle
+      +footer-bottom
+    // End footer
+    
+    script(src='js/main.js')
+    

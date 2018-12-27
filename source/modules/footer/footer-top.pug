@@ -1,0 +1,43 @@
+mixin footer-top
+  .footer-top
+    .container
+      .row
+        .col-md-10.col-lg-4.footer-top-col
+          a(href="#" class="footer-top-col__logo")
+            img(src="images/logo-footer.jpg")
+          p.footer-top-col__text Green shop được thành lập từ 8/2010 được sự tin tưởng của khách hàng trong suốt thời gian hoạt động đến nay cửa hàng ngày một phát triển 
+          .footer-top-col-contact
+            .footer-top-col-contact-item
+              span.footer-top-col-contact-item__icon
+                i.fas.fa-mobile-alt
+              span.footer-top-col-contact-item__text  Điện thoại : (84-4) 66.558.868
+            .footer-top-col-contact-item
+              span.footer-top-col-contact-item__icon
+                i.far.fa-envelope
+              span.footer-top-col-contact-item__text  Email: info@dkt.com.vn
+        .col-md-3.col-lg-3.footer-top-col
+          h6.footer-top-col__title Thông tin khách hàng
+          ul.footer-top-col-list
+            each item_1 in ['Tài khoản của tôi', 'Sản phẩm yêu thích', 'Lịch sử mua hàng', 'Chính sách đổi trả', 'Góp ý ,khiếu nại']
+              li.footer-top-col-list__item
+                a(href="#" class="footer-top-col-list__link")= item_1
+        .col-md-3.col-lg-2.footer-top-col
+          h6.footer-top-col__title Hỗ trợ dịch vụ
+          ul.footer-top-col-list
+            each item_2 in ['Hệ thống cửa hàng', 'Hướng dẫn mua hàng', 'Hướng dẫn thanh toán', 'Tích điểm đổi quà', 'Câu hỏi thường gặp']
+              li.footer-top-col-list__item
+                a(href="#" class="footer-top-col-list__link")= item_2
+        .col-md-3.col-lg-2.footer-top-col
+          h6.footer-top-col__title Chính sách ưu đãi
+          ul.footer-top-col-list
+            each item_3 in ['Chính sách giao hàng', 'Chính sách đổi trả sản phẩm', 'Chính sách bảo hành ', 'Giới thiệu sản phẩm mới', 'Chính sách trả góp']
+              li.footer-top-col-list__item
+                a(href="#" class="footer-top-col-list__link")= item_3
+        .col-md-3.col-lg-1.footer-top-col
+          h6.footer-top-col__title Tin tức
+          ul.footer-top-col-list
+            each item_4 in ['Tin mới', 'Khuyến mại', 'Tuyển dụng', 'Download', 'Tags']
+              li.footer-top-col-list__item
+                a(href="#" class="footer-top-col-list__link")= item_4
+
+
